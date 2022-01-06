@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/pecker/static/css/main.14055c11.css",
-    "main.js": "/pecker/static/js/main.499d4660.js",
+    "main.js": "/pecker/static/js/main.941e64c2.js",
     "index.html": "/pecker/index.html",
     "main.14055c11.css.map": "/pecker/static/css/main.14055c11.css.map",
-    "main.499d4660.js.map": "/pecker/static/js/main.499d4660.js.map"
+    "main.941e64c2.js.map": "/pecker/static/js/main.941e64c2.js.map"
   },
   "entrypoints": [
     "static/css/main.14055c11.css",
-    "static/js/main.499d4660.js"
+    "static/js/main.941e64c2.js"
   ]
 }

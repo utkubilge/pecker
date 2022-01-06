@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/pecker/static/css/main.eb3254d8.css",
-    "main.js": "/pecker/static/js/main.63b1e484.js",
+    "main.css": "/pecker/static/css/main.14055c11.css",
+    "main.js": "/pecker/static/js/main.499d4660.js",
     "index.html": "/pecker/index.html",
-    "main.eb3254d8.css.map": "/pecker/static/css/main.eb3254d8.css.map",
-    "main.63b1e484.js.map": "/pecker/static/js/main.63b1e484.js.map"
+    "main.14055c11.css.map": "/pecker/static/css/main.14055c11.css.map",
+    "main.499d4660.js.map": "/pecker/static/js/main.499d4660.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb3254d8.css",
-    "static/js/main.63b1e484.js"
+    "static/css/main.14055c11.css",
+    "static/js/main.499d4660.js"
   ]
 }

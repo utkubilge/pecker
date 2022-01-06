@@ -1,0 +1,13 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.indexback {
+    height: 100vh;
+    background-color: rgb(83, 151, 129);
+}
+
+.indexdiv {
+    background-color: rgb(154, 231, 205);
+}

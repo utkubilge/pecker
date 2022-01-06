@@ -1,81 +1,36 @@
+import './index.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./routes/app/App";
+import Counter from "./routes/counter/Counter";
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
-import './App.css';
-import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
-
-function TodoForm({ addTodo }) {
-  const [value, setValue] = React.useState("");
-
-  const handleSubmit = e => {
-    e.preventDefault();
-    if (!value) return;
-    addTodo(value);
-    setValue("");
-  };
-
+function Home() {
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        className="input"
-        value={value}
-        onChange={e => setValue(e.target.value)}
-      />
-    </form>
-  );
-}
-
-function Todo({ todo, index, removeTodo }) {
-  return (
-    <div className="todo">
-      {todo.text}
-      <button onClick={() => removeTodo(index)}>x</button>
-    </div>
-    
-  );
-};
-
-
-function App() {
-  const [todos, setTodos] = React.useState([
-    { text: "Learn about React" },
-    { text: "Meet friend for lunch" },
-    { text: "Build really cool todo app" }
-  ]);
-
-  const removeTodo = index => {
-    const newTodos = [...todos];
-    newTodos.splice(index, 1);
-    setTodos(newTodos);
-  };
-
-  const addTodo = text => {
-    const newTodos = [...todos, { text }];
-    setTodos(newTodos);
-  };
-
-  
-  
-  return (
-    <div className="app">
-      <div className="todo-list">
-        {todos.map((todo, index) => (
-          <Todo
-            key={index}
-            index={index}
-            todo={todo}
-            removeTodo={removeTodo}
-          />
-        ))}
-        <TodoForm addTodo={addTodo} />
-      </div>
+    <div className='indexback'>
+      <br />
+      Welcome to home, pecker
     </div>
   )
 }
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <div className='indexdiv'>
+      <h1>Pecker</h1>
+      <nav style={{ borderBottom: 'solid 1px', paddingBottom: '1rem', margin: "auto" }}>
+        <Link to="/">{" "}Home</Link> |{' '}
+        <Link to="/app">App</Link> |{' '}
+        <Link to="/counter">Counter</Link>
+      </nav>
+    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="app" element={<App />} />
+      <Route path="counter" element={<Counter />} />
+    </Routes>
+
+  </BrowserRouter>
+  ,
   document.getElementById('root')
 );

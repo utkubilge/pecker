@@ -19,15 +19,15 @@ ReactDOM.render(
     <div className='indexdiv'>
       <h1>Pecker</h1>
       <nav style={{ borderBottom: 'solid 1px', paddingBottom: '1rem', margin: "auto" }}>
-        <Link to="/">{" "}Home</Link> |{' '}
-        <Link to="/app">App</Link> |{' '}
-        <Link to="/counter">Counter</Link>
+        <Link to="/pecker">{" "}Home</Link> |{' '}
+        <Link to="/pecker/app">App</Link> |{' '}
+        <Link to="/pecker/counter">Counter</Link>
       </nav>
     </div>
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="app" element={<App />} />
-      <Route path="counter" element={<Counter />} />
+      <Route path="pecker" element={<Home />} />
+      <Route path="pecker/app" element={<App />} />
+      <Route path="pecker/counter" element={<Counter />} />
     </Routes>
 
   </BrowserRouter>
